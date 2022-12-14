@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--- ICS2O-TEST --->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My first PWA" />
+    <meta name="keywords" content="mths, ics2o" />
+    <meta name="author" content="Alex Nelson" />
+    <meta name="theme-color" content="#FFFFFF" />
+    <link
+      rel="canonical"
+      href="https://Alex-Nelson-1.github.io/ICS2O-UNIT5-03-JS-ELSE-IF/"
+    />
+    <link
+      rel="manifest"
+      href="/ICS2O-UNIT5-03-JS-ELSE-IF/manifest.webmanifest"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <!--- None blocking for Lighthouse report --->
+    <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
+
+    <!-- Links to Material Design Lite -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      />
+    </noscript>
+    <link
+      rel="stylesheet"
+      href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+      media="none"
+      onload="if(media!='all')media='all'"
+    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://code.getmdl.io/1.3.0/material.indigo-purple.min.css"
+      />
+    </noscript>
+    <!-- Favicon code -->
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <!-- Title -->
+    <title>And Or statements</title>
+  </head>
+  <body>
+    <!-- Code linking JS and reference to MDL -->
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <!-- Header code -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Discount Eligibility</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <!-- Explination -->
+        <h5>
+          Students between the age of 13 and 20 get a student discount on Monday
+          and Tuesday. Please select a day and your age to see if you are
+          eligible for a student discount.
+        </h5>
+        <!-- Textfield code -->
+        <form action="#">
+          Age:
+          <div class="mdl-textfield mdl-js-textfield">
+            <input
+              class="mdl-textfield__input"
+              type="text"
+              pattern="-?[0-9]*(\.[0-9]+)?"
+              id="age"
+            />
+            <!--This will control the textfields error message and label-->
+            <label class="mdl-textfield__label" for="age">Age</label>
+            <span class="mdl-textfield__error">Numbers Only!</span>
+          </div>
+        </form>
+        <!-- Raised button with ripple and JS function -->
+        <button
+          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+          onclick="TEST()"
+        >
+          TEST
+        </button>
+        <div id="output"></div>
+      </main>
+    </div>
+  </body>
+</html>
