@@ -12,7 +12,10 @@
       rel="canonical"
       href="https://Alex-Nelson-1.github.io/ICS2O-UNIT6-03-API/"
     />
-    <link rel="manifest" href="/ICS2O-UNIT6-03-API/manifest.webmanifest" />
+    <link
+      rel="manifest"
+      href="/ICS2O-UNIT6-03-API/manifest.webmanifest"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
@@ -47,7 +50,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
     <!-- Title -->
-    <title>And Or statements</title>
+    <title>Weather Api</title>
   </head>
   <body>
     <!-- Code linking JS and reference to MDL -->
@@ -57,39 +60,12 @@
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
       <header class="mdl-layout__header">
         <div class="mdl-layout__header-row">
-          <span class="mdl-layout-title">Discount Eligibility</span>
+          <span class="mdl-layout-title">Weather Api</span>
         </div>
       </header>
       <main class="mdl-layout__content">
-        <!-- Explination -->
-        <h5>
-          Students between the age of 13 and 20 get a student discount on Monday
-          and Tuesday. Please select a day and your age to see if you are
-          eligible for a student discount.
-        </h5>
-        <!-- Textfield code -->
-        <form action="#">
-          Age:
-          <div class="mdl-textfield mdl-js-textfield">
-            <input
-              class="mdl-textfield__input"
-              type="text"
-              pattern="-?[0-9]*(\.[0-9]+)?"
-              id="age"
-            />
-            <!--This will control the textfields error message and label-->
-            <label class="mdl-textfield__label" for="age">Age</label>
-            <span class="mdl-textfield__error">Numbers Only!</span>
-          </div>
-        </form>
-        <!-- Raised button with ripple and JS function -->
-        <button
-          class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-          onclick="TEST()"
-        >
-          TEST
-        </button>
-        <div id="output"></div>
+    
+        <div id="temperature"></div>
       </main>
     </div>
   </body>
