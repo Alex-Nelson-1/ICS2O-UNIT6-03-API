@@ -1,35 +1,51 @@
 <mxfile host="65bd71144e">
     <diagram id="GInHtZuMB5CcCfA9ihm7" name="Page-1">
-        <mxGraphModel dx="690" dy="543" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="434" dy="428" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="7" style="edgeStyle=none;html=1;" edge="1" parent="1" source="2" target="3">
+                <mxCell id="7" style="edgeStyle=none;html=1;" parent="1" source="2" target="3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
+                <mxCell id="2" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
                     <mxGeometry x="300" y="260" width="100" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" style="edgeStyle=none;html=1;" edge="1" parent="1" source="3" target="4">
+                <mxCell id="8" style="edgeStyle=none;html=1;" parent="1" source="3" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="350" y="520" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="temperatureNode&lt;br&gt;feelsLikeNode&lt;br&gt;humidityNode&lt;br&gt;weatherNode" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="350" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" style="edgeStyle=none;html=1;" parent="1" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="350" y="620" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="10" style="edgeStyle=none;html=1;" parent="1" source="5" target="6" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="3" value="Input" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
-                    <mxGeometry x="300" y="360" width="100" height="60" as="geometry"/>
+                <mxCell id="5" value="temperatureNode&lt;br&gt;feelsLikeNode&lt;br&gt;humidityNode&lt;br&gt;weatherNode" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" parent="1" vertex="1">
+                    <mxGeometry x="275" y="690" width="150" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" style="edgeStyle=none;html=1;" edge="1" parent="1" source="4" target="5">
+                <mxCell id="6" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="300" y="840" width="100" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="" style="edgeStyle=none;html=1;" edge="1" parent="1" source="11" target="12">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="process" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
-                    <mxGeometry x="300" y="460" width="100" height="100" as="geometry"/>
+                <mxCell id="11" value="if&amp;nbsp;&lt;br&gt;JsonMain" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="300" y="520" width="100" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" style="edgeStyle=none;html=1;" edge="1" parent="1" source="5" target="6">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="12" value="Error" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="490" y="550" width="80" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="Output" style="shape=parallelogram;html=1;strokeWidth=2;perimeter=parallelogramPerimeter;whiteSpace=wrap;rounded=1;arcSize=12;size=0.23;" vertex="1" parent="1">
-                    <mxGeometry x="300" y="600" width="100" height="60" as="geometry"/>
+                <mxCell id="14" value="No" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="383" y="546" width="60" height="30" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="Stop" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.terminator;whiteSpace=wrap;" vertex="1" parent="1">
-                    <mxGeometry x="300" y="700" width="100" height="60" as="geometry"/>
+                <mxCell id="15" value="Yes" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="308" y="614" width="60" height="30" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
