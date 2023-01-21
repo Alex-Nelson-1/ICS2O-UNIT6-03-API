@@ -23,13 +23,19 @@ if (navigator.serviceWorker) {
 
 const getWeather = async (URLAddress) => {
   try {
+
+    //Fetch
     const result = await fetch(URLAddress)
     const jsonData = await result.json()
     console.log(jsonData)
     if (jsonData.main) {
+      
+      //Variable inputs for weather
       const temp = jsonData.main.temp - 273.15
       const feel = jsonData.main.feels_like - 273.15
       const humidity = jsonData.main.humidity
+      
+      //Display weather variables
       document.getElementById("temperature").innerHTML =
         "Temperature: " +
         temp.toFixed(0) +
@@ -44,6 +50,7 @@ const getWeather = async (URLAddress) => {
     } else {
       console.log(error)
     }
+    //catch error
   } catch (err) {
     console.log(err)
   }

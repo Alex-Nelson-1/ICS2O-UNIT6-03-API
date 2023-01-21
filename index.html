@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<!--- ICS2O-TEST --->
+<!--- ICS2O-Api --->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="My first PWA" />
+    <meta name="description" content="Api" />
     <meta name="keywords" content="mths, ics2o" />
     <meta name="author" content="Alex Nelson" />
     <meta name="theme-color" content="#FFFFFF" />
@@ -12,12 +12,15 @@
       rel="canonical"
       href="https://Alex-Nelson-1.github.io/ICS2O-UNIT6-03-API/"
     />
-    <link rel="manifest" href="/ICS2O-UNIT6-03-API/manifest.webmanifest" />
+    <link
+      rel="manifest"
+      href="/ICS2O-UNIT6-03-API/manifest.webmanifest"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <!--- None blocking for Lighthouse report --->
     <!--- https://stackoverflow.com/questions/32759272/how-to-load-css-asynchronously --->
 
-    <!-- Links to Material Design Lite -->
+    <!-- To Make Material Design Lite work with lighthouse-->
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -61,6 +64,8 @@
         </div>
       </header>
       <main class="mdl-layout__content">
+
+        <div id="image"></div>
         <div id="temperature"></div>
       </main>
     </div>
