@@ -26,7 +26,7 @@ const getWeather = async (URLAddress) => {
 
     //Variable for img
     const icon = jsonData.weather[0].icon
-    const imageUrl = "http://openweathermap.org/img/wn/" + icon + "@2x.png"
+    const imageUrl = "https://openweathermap.org/img/wn/" + icon + "@2x.png"
     if (jsonData.weather[0].id) {
       document.getElementById("image").innerHTML =
         '<img src="' + imageUrl + '" alt="Weather image"' + ">"
